@@ -5,6 +5,10 @@
 - Exposing the config file so that users can change the colors of the different dividers
 - Adding more divider syntax options
 
+#### 1.4.3
+
+- Updated changelog and added license file GNU General Public License v3.0
+
 #### 1.4.2
 
 - Readme and metadata updated for Marketplace
