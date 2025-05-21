@@ -1,7 +1,7 @@
 # ![Divider Example](images/dccd.png) Dynamic Code & Comment Divider
 
 <p align="left" style="display: flex; align-items: center;">
-  <img src="images/dccd.png" alt="Icon" width="32" height="32" style="margin-right: 10px;">
+  <img src="images/dccd.png" alt="Icon" width="32" height="32" style="margin-right: 10px; margin-top: 20px;">
   <span style="font-size: 20px; vertical-align: middle; padding-bottom: 20px;"><strong>Dynamic Code & Comment Divider</strong></span>
 </p>
 
