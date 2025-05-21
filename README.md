@@ -9,6 +9,7 @@ Enhance code readability with dynamic, theme-aware dividers for code and comment
 - Highlight entire lines with distinct, theme-consistent backgrounds and foreground colors.
 - Apply visual markers to different types of lines (e.g., comments, section headers, annotations).
 - Easily differentiate code regions using colorful, semantic dividers.
+- Find your comments or categories fast using scrollbar markers.
 - Lightweight and fast – uses native VS Code decoration APIs.
 
 > Example usage (custom colors shown below):
