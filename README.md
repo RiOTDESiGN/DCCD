@@ -1,4 +1,4 @@
-# Dynamic Code & Comment Divider
+# > ![Divider Example](images/dccd.png) Dynamic Code & Comment Divider
 
 Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.
 
