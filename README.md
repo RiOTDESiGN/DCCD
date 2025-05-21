@@ -49,6 +49,11 @@ If you encounter unexpected behavior, feel free to open an issue on the reposito
 
 ## 📜 Release Notes
 
+#### 1.4.2
+
+- Readme and metadata updated for Marketplace
+- Cross-extension performance improved
+
 #### 1.4.1
 
 - Internal refactor
