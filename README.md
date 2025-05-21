@@ -1,4 +1,4 @@
-# > ![Divider Example](images/dccd.png) Dynamic Code & Comment Divider
+# ![Divider Example](images/dccd.png) Dynamic Code & Comment Divider
 
 Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.
 
@@ -12,7 +12,6 @@ Enhance code readability with dynamic, theme-aware dividers for code and comment
 - Find your comments or categories fast using scrollbar markers.
 - Lightweight and fast – uses native VS Code decoration APIs.
 
-> Example usage (custom colors shown below):
 > ![Divider Example](images/divider-examples.png)
 
 ---
