@@ -1,6 +1,7 @@
 # Dynamic Code & Comment Divider
 
-Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.
+Enhance code readability with dynamic, theme-aware dividers for code and comments.  
+Organize your workspace visually with customizable line highlights and section breaks.
 
 ---
 
@@ -27,7 +28,7 @@ This version currently does not expose settings via the UI, but future versions 
 
 ## 🚀 Activation
 
-The extension currently activates on VS Code startup and window reload.
+The extension currently activates after VS Code startup and window reload.
 
 ---
 
@@ -48,17 +49,17 @@ If you encounter unexpected behavior, feel free to open an issue on the reposito
 
 ## 📜 Release Notes
 
-1.4.1
+#### 1.4.1
 
 - Internal refactor
 - Readme and metadata updated for Marketplace
 
-  1.4.0
+#### 1.4.0
 
 - Added additional color types for dividers
 - Improved performance and styling fidelity
 
-  1.0.0
+#### 1.0.0
 
 - Initial release with base divider types and decorations
 
