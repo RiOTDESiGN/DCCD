@@ -1,5 +1,10 @@
 # ![Divider Example](images/dccd.png) Dynamic Code & Comment Divider
 
+<p align="left" style="display: flex; align-items: center;">
+  <img src="images/dccd.png" alt="Icon" width="32" height="32" style="margin-right: 10px;">
+  <span style="font-size: 20px; vertical-align: middle;"><strong>Dynamic Code & Comment Divider</strong></span>
+</p>
+
 Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.
 
 ---
