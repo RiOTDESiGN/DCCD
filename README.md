@@ -72,4 +72,4 @@ If you encounter unexpected behavior, feel free to open an issue on the reposito
 
 ---
 
-## Enjoy cleaner, more structured code with Dynamic Code & Comment Divider!
+### Enjoy cleaner, more structured code with Dynamic Code & Comment Divider!
