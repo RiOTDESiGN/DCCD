@@ -29,7 +29,7 @@
   },
   "pricing": "Free",
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "engines": {
     "vscode": "^1.100.0"
