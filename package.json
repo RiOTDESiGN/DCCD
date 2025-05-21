@@ -1,0 +1,65 @@
+{
+  "name": "dccd",
+  "displayName": "Dynamic Code & Comment Divider",
+  "version": "0.1.0",
+  "publisher": "RiOTDESiGN",
+  "description": "Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.",
+  "author": {
+    "name": "Erik Ruud Ulseth"
+  },
+  "categories": [
+    "Formatters",
+    "Programming Languages",
+    "Visualization"
+  ],
+  "keywords": [
+    "decorator",
+    "divider",
+    "highlight",
+    "comment",
+    "visual",
+    "code style",
+    "categories",
+    "category"
+  ],
+  "icon": "images/dccd.png",
+  "galleryBanner": {
+    "color": "#21252b",
+    "theme": "light"
+  },
+  "pricing": "Free",
+  "activationEvents": [
+    "*"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "bugs": {
+    "url": "https://github.com/microsoft/vscode-wordcount/issues",
+    "email": "sean@contoso.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode-wordcount.git"
+  }
+}
