@@ -1,7 +1,7 @@
 {
   "name": "dccd",
   "displayName": "Dynamic Code & Comment Divider",
-  "version": "0.1.0",
+  "version": "1.4.1",
   "publisher": "RiOTDESiGN",
   "description": "Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.",
   "author": {
@@ -25,7 +25,7 @@
   "icon": "images/dccd.png",
   "galleryBanner": {
     "color": "#21252b",
-    "theme": "light"
+    "theme": "dark"
   },
   "pricing": "Free",
   "activationEvents": [

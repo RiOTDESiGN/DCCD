@@ -1,4 +1,4 @@
-# <img src="images/dccd.png" alt="Icon" width="128" height="128"> Dynamic Code & Comment Divider
+# Dynamic Code & Comment Divider
 
 Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.
 
@@ -53,12 +53,12 @@ If you encounter unexpected behavior, feel free to open an issue on the reposito
 - Internal refactor
 - Readme and metadata updated for Marketplace
 
-1.4.0
+  1.4.0
 
 - Added additional color types for dividers
 - Improved performance and styling fidelity
 
-1.0.0
+  1.0.0
 
 - Initial release with base divider types and decorations
 
