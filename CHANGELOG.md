@@ -1,6 +1,10 @@
 # Change Log
 
-## [1.4.4] Released
+## [1.4.5] Released
+
+- Added the GitHub Sponsor button.
+
+## 1.4.4
 
 - Exposed configuration settings for divider colors, styles, and weights in the VS Code settings UI.
 - Added more divider syntax options for greater flexibility and customization.

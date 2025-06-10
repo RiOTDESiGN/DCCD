@@ -51,6 +51,10 @@ If you encounter unexpected behavior, feel free to open an issue on the reposito
 
 ## 📜 Release Notes
 
+#### 1.4.5
+
+- Added the GitHub Sponsor button.
+
 #### 1.4.4
 
 - Exposed configuration settings for divider colors, styles, and weights in the VS Code settings UI.
