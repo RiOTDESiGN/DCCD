@@ -35,31 +35,81 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.activate = activate;
 exports.deactivate = deactivate;
-const vscode = __importStar(require("vscode"));
-function createDecorationType(color) {
-    return vscode.window.createTextEditorDecorationType({
-        backgroundColor: new vscode.ThemeColor('titleBar.activeBackground'),
+const VS = __importStar(require("vscode"));
+function createDecorationType(color, style, weight) {
+    return VS.window.createTextEditorDecorationType({
+        backgroundColor: new VS.ThemeColor('titleBar.activeBackground'),
         color,
-        fontStyle: 'normal',
+        fontStyle: style,
+        fontWeight: weight,
         isWholeLine: true,
         overviewRulerColor: color,
-        overviewRulerLane: vscode.OverviewRulerLane.Right,
+        overviewRulerLane: VS.OverviewRulerLane.Right,
     });
 }
 function activate(context) {
+    const config = VS.workspace.getConfiguration('dccd');
     const patterns = [
-        { name: 'curly', color: '#d19a66', regex: /^\s*\/\/\s*\{.*\}/ },
-        { name: 'square', color: '#61afef', regex: /^\s*\/\/\s*\[.*\]/ },
-        { name: 'paren', color: '#98c379', regex: /^\s*\/\/\s*\(.*\)/ },
-        { name: 'star', color: '#c678dd', regex: /^\s*\/\/\s*\*.*\*/ },
-        { name: 'dash', color: '#e06c75', regex: /^\s*\/\/\s*-.*-/ },
-        { name: 'plus', color: '#e5c07b', regex: /^\s*\/\/\s*\+.*\+/ },
-        { name: 'angle', color: '#56b6c2', regex: /^\s*\/\/\s*<.*>/ },
-        { name: 'bar', color: '#cccccc', regex: /^\s*\/\/\s*\#.*\#/ },
+        {
+            name: 'paren',
+            color: config.get('colors.paren', '#98c379'),
+            style: config.get('styles.paren', 'normal'),
+            weight: config.get('weights.paren', 'bold'),
+            regex: /^\s*\/\/\s*\([^'"]*\).*$/,
+        },
+        {
+            name: 'angle',
+            color: config.get('colors.angle', '#56b6c2'),
+            style: config.get('styles.angle', 'normal'),
+            weight: config.get('weights.angle', 'bold'),
+            regex: /^\s*\/\/\s*<[^'"]*>.*$/,
+        },
+        {
+            name: 'curly',
+            color: config.get('colors.curly', '#d19a66'),
+            style: config.get('styles.curly', 'normal'),
+            weight: config.get('weights.curly', 'bold'),
+            regex: /^\s*\/\/\s*\{[^'"]*\}.*$/,
+        },
+        {
+            name: 'square',
+            color: config.get('colors.square', '#61afef'),
+            style: config.get('styles.square', 'normal'),
+            weight: config.get('weights.square', 'bold'),
+            regex: /^\s*\/\/\s*\[[^'"]*\].*$/,
+        },
+        {
+            name: 'bar',
+            color: config.get('colors.bar', '#cccccc'),
+            style: config.get('styles.bar', 'normal'),
+            weight: config.get('weights.bar', 'bold'),
+            regex: /^\s*\/\/.*#{3,}.*$/,
+        },
+        {
+            name: 'star',
+            color: config.get('colors.star', '#c678dd'),
+            style: config.get('styles.star', 'normal'),
+            weight: config.get('weights.star', 'bold'),
+            regex: /^\s*\/\/.*\*{3,}.*$/,
+        },
+        {
+            name: 'plus',
+            color: config.get('colors.plus', '#e5c07b'),
+            style: config.get('styles.plus', 'normal'),
+            weight: config.get('weights.plus', 'bold'),
+            regex: /^\s*\/\/.*\+{3,}.*$/,
+        },
+        {
+            name: 'dash',
+            color: config.get('colors.dash', '#e06c75'),
+            style: config.get('styles.dash', 'normal'),
+            weight: config.get('weights.dash', 'bold'),
+            regex: /^\s*\/\/.*-{3,}.*$/,
+        },
     ];
-    const decorationTypes = Object.fromEntries(patterns.map(({ name, color }) => [name, createDecorationType(color)]));
+    const decorationTypes = Object.fromEntries(patterns.map(({ name, color, style, weight }) => [name, createDecorationType(color, style, weight)]));
     const updateDecorations = () => {
-        const editor = vscode.window.activeTextEditor;
+        const editor = VS.window.activeTextEditor;
         if (!editor) {
             return;
         }
@@ -69,7 +119,7 @@ function activate(context) {
             const text = line.text;
             for (const { name, regex } of patterns) {
                 if (regex.test(text)) {
-                    matches[name].push({ range: new vscode.Range(i, 0, i, text.length) });
+                    matches[name].push({ range: new VS.Range(i, 0, i, text.length) });
                     break;
                 }
             }
@@ -78,17 +128,17 @@ function activate(context) {
             editor.setDecorations(decorationTypes[name], matches[name]);
         }
     };
-    if (vscode.window.activeTextEditor) {
+    if (VS.window.activeTextEditor) {
         updateDecorations();
     }
-    context.subscriptions.push(vscode.workspace.onDidChangeTextDocument((event) => {
-        const editor = vscode.window.activeTextEditor;
+    context.subscriptions.push(VS.workspace.onDidChangeTextDocument((event) => {
+        const editor = VS.window.activeTextEditor;
         if (editor && event.document === editor.document) {
             updateDecorations();
         }
-    }), vscode.window.onDidChangeActiveTextEditor(() => {
+    }), VS.window.onDidChangeActiveTextEditor(() => {
         updateDecorations();
-    }), vscode.window.onDidChangeTextEditorSelection(() => {
+    }), VS.window.onDidChangeTextEditorSelection(() => {
         updateDecorations();
     }));
 }

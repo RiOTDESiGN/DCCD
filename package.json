@@ -1,7 +1,7 @@
 {
   "name": "dccd",
   "displayName": "Dynamic Code & Comment Divider",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "publisher": "RiOTDESiGN",
   "description": "Enhance code readability with dynamic, theme-aware dividers for code and comments. Organize your workspace visually with customizable line highlights and section breaks.",
   "author": {
@@ -63,5 +63,226 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/RiOTDESiGN/DCCD.git"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/RiOTDESiGN"
+    }
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Dynamic Code & Comment Divider",
+      "properties": {
+        "dccd.colors.curly": {
+          "type": "string",
+          "default": "#d19a66",
+          "description": "Color for curly comment lines"
+        },
+        "dccd.colors.square": {
+          "type": "string",
+          "default": "#61afef",
+          "description": "Color for square comment lines"
+        },
+        "dccd.colors.paren": {
+          "type": "string",
+          "default": "#98c379",
+          "description": "Color for paren comment lines"
+        },
+        "dccd.colors.star": {
+          "type": "string",
+          "default": "#c678dd",
+          "description": "Color for star comment lines"
+        },
+        "dccd.colors.dash": {
+          "type": "string",
+          "default": "#e06c75",
+          "description": "Color for dash comment lines"
+        },
+        "dccd.colors.plus": {
+          "type": "string",
+          "default": "#e5c07b",
+          "description": "Color for plus comment lines"
+        },
+        "dccd.colors.angle": {
+          "type": "string",
+          "default": "#56b6c2",
+          "description": "Color for angle comment lines"
+        },
+        "dccd.colors.bar": {
+          "type": "string",
+          "default": "#cccccc",
+          "description": "Color for bar comment lines"
+        },
+        "dccd.styles.curly": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for curly comment lines"
+        },
+        "dccd.styles.square": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for square comment lines"
+        },
+        "dccd.styles.paren": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for paren comment lines"
+        },
+        "dccd.styles.star": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for star comment lines"
+        },
+        "dccd.styles.dash": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for dash comment lines"
+        },
+        "dccd.styles.plus": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for plus comment lines"
+        },
+        "dccd.styles.angle": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for angle comment lines"
+        },
+        "dccd.styles.bar": {
+          "type": "string",
+          "default": "normal",
+          "enum": [
+            "normal",
+            "italic",
+            "oblique"
+          ],
+          "description": "Font style for bar comment lines"
+        },
+        "dccd.weights.curly": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for curly comment lines"
+        },
+        "dccd.weights.square": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for square comment lines"
+        },
+        "dccd.weights.paren": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for paren comment lines"
+        },
+        "dccd.weights.star": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for star comment lines"
+        },
+        "dccd.weights.dash": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for dash comment lines"
+        },
+        "dccd.weights.plus": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for plus comment lines"
+        },
+        "dccd.weights.angle": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for angle comment lines"
+        },
+        "dccd.weights.bar": {
+          "type": "string",
+          "default": "bold",
+          "enum": [
+            "normal",
+            "bold",
+            "bolder",
+            "lighter"
+          ],
+          "description": "Font weight for bar comment lines"
+        }
+      }
+    }
   }
 }

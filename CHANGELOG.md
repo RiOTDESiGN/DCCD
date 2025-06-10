@@ -1,9 +1,9 @@
 # Change Log
 
-## [unreleased]
+## [1.4.4] Released
 
-- Exposing the config file so that users can change the colors of the different dividers
-- Adding more divider syntax options
+- Exposed configuration settings for divider colors, styles, and weights in the VS Code settings UI.
+- Added more divider syntax options for greater flexibility and customization.
 
 #### 1.4.3
 

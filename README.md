@@ -7,7 +7,7 @@ Organize your workspace visually with customizable line highlights and section b
 
 ## ✨ Features
 
-- Highlight entire lines with distinct, theme-consistent backgrounds and foreground colors.
+- Highlight entire lines with distinct, theme-consistent background and foreground colors.
 - Apply visual markers to different types of lines (e.g., comments, section headers, annotations).
 - Easily differentiate code regions using colorful, semantic dividers.
 - Find your comments or categories fast using scrollbar markers.
@@ -19,10 +19,12 @@ Organize your workspace visually with customizable line highlights and section b
 
 ## ⚙️ Extension Settings
 
-This version currently does not expose settings via the UI, but future versions may include:
+You can now customize divider colors, font styles, and weights for each divider type directly from the VS Code settings UI. Look for settings under `Dynamic Code & Comment Divider` or `dccd` in your VS Code settings.
 
-- Custom color configuration per divider type.
-- Toggle activation on specific file types or languages.
+Available settings include:
+
+- Color, font style, and font weight for each divider type: curly, square, paren, star, dash, plus, angle, bar
+- All settings are theme-aware and update instantly
 
 ---
 
@@ -43,11 +45,20 @@ No external dependencies are required. Works out of the box with any VS Code the
 - Decorations may conflict visually with certain high-contrast themes.
 - All lines matching regex patterns will be styled identically until per-type configs are introduced.
 
-If you encounter unexpected behavior, feel free to open an issue on the repository (link coming soon).
+If you encounter unexpected behavior, feel free to open an issue on the repository.
 
 ---
 
 ## 📜 Release Notes
+
+#### 1.4.4
+
+- Exposed configuration settings for divider colors, styles, and weights in the VS Code settings UI.
+- Added more divider syntax options for greater flexibility and customization.
+
+#### 1.4.3
+
+- Updated changelog and added license file GNU General Public License v3.0
 
 #### 1.4.2
 
