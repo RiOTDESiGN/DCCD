@@ -44,12 +44,17 @@ No external dependencies are required. Works out of the box with any VS Code the
 
 - Decorations may conflict visually with certain high-contrast themes.
 - All lines matching regex patterns will be styled identically until per-type configs are introduced.
+- Some VS Code themes will have the same color on both header and background, making the divider "invisible".
 
 If you encounter unexpected behavior, feel free to open an issue on the repository.
 
 ---
 
 ## 📜 Release Notes
+
+#### 1.4.6
+
+- Updated the code to adhere to new eslint rules.
 
 #### 1.4.5
 

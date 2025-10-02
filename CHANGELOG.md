@@ -1,6 +1,10 @@
 # Change Log
 
-## [1.4.5] Released
+## [1.4.6] Released
+
+- Updated the code to adhere to new eslint rules.
+
+## 1.4.5
 
 - Added the GitHub Sponsor button.
 
